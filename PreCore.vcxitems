@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup Label="Globals">
     <MSBuildAllProjects Condition="'$(MSBuildVersion)' == '' Or '$(MSBuildVersion)' &lt; '16.0'">$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
@@ -12,5 +12,119 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ProjectCapability Include="SourceItemsFromImports" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)datas\aabb.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)datas\allocator_hybrid.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)datas\app_context.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)datas\base_128.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)datas\bincore_fwd.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)datas\binreader.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)datas\binreader_ref.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)datas\binreader_stream.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)datas\binwritter.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)datas\binwritter_ref.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)datas\binwritter_stream.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)datas\bitfield.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)datas\crc32.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)datas\deleter_hybrid.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)datas\directory_scanner.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)datas\encrypt\blowfish.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)datas\encrypt\blowfish2.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)datas\encrypt\encryptor.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)datas\encrypt\xorenc.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)datas\endian.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)datas\endian_fwd.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)datas\except.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)datas\fileinfo.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)datas\flags.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)datas\float.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)datas\internal\bincore.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)datas\internal\bincore_endian.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)datas\internal\bincore_file.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)datas\internal\bincore_navi.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)datas\internal\reflector_class.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)datas\internal\reflector_enum.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)datas\internal\reflector_type.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)datas\internal\sc_architecture.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)datas\internal\sc_type.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)datas\jenkinshash.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)datas\jenkinshash3.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)datas\macroLoop.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)datas\master_printer.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)datas\matrix44.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)datas\multi_thread.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)datas\pointer.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)datas\pugiex.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)datas\pugi_fwd.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)datas\pythonex.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)datas\python\matrix44.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)datas\python\reflected_enum.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)datas\python\vectors.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)datas\reflector.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)datas\reflector_fwd.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)datas\reflector_io.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)datas\reflector_xml.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)datas\refl_array.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)datas\settings.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)datas\stat.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)datas\string_view.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)datas\supercore.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)datas\tchar.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)datas\unicode.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)datas\unit_testing.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)datas\vectors.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)datas\vectors_fwd.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)datas\vectors_simd.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)datas\vectors_stream.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)datas\vectors_string.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)formats\addr_ps3.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)formats\BlockDecoder.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)formats\BlockDecoderSimd.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)formats\DDS.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)formats\FWSE.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)formats\MSF.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)formats\VAG.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)formats\WAVE.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)formats\XVAG.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)formats\ZIP.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)gltf\include\gltf.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)gltf\include\gltf.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)spike\cache.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)spike\console.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)spike\context.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)spike\out_context.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)spike\tmp_storage.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(MSBuildThisFileDirectory)datas\crc32.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)datas\directory_scanner.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)datas\encrypt\blowfish.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)datas\master_printer.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)datas\matrix44.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)datas\reflector.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)datas\reflector_io.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)datas\reflector_xml.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)datas\stat.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)gltf\src\fx_gltf.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)gltf\src\gltf.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)spike\console.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)spike\context.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)spike\in_cache.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)spike\in_context.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)spike\out_cache.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)spike\out_context.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)spike\spike.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)spike\tmp_storage.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="$(MSBuildThisFileDirectory)datas\internal\bitfield.inl" />
+    <None Include="$(MSBuildThisFileDirectory)datas\internal\reflector.inl" />
+    <None Include="$(MSBuildThisFileDirectory)datas\internal\stat_ix.inl" />
+    <None Include="$(MSBuildThisFileDirectory)datas\internal\stat_win.inl" />
+    <None Include="$(MSBuildThisFileDirectory)datas\internal\string_view.inl" />
+    <None Include="$(MSBuildThisFileDirectory)formats\BlockDecoder.inl" />
+    <None Include="$(MSBuildThisFileDirectory)formats\ZIP_istream.inl" />
+    <None Include="$(MSBuildThisFileDirectory)formats\ZIP_ostream.inl" />
   </ItemGroup>
 </Project>
